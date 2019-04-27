@@ -2,32 +2,69 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
 
 .App-header {
-  background-color: #282c34;
+  background: linear-gradient(
+                     rgba(0, 57, 245, 0.836), 
+                     rgba(2, 30, 156, 0.651));
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  
+}
+
+.quote-author{
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  z-index: 1;
+  font-style: italic;
+  color: #045;
+
+}
+.quoteText{
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: #045;
+  width: 700px;
+ }
+
+.card-action{
+  position: unset!important;
+  
+}
+
+.share_button{
+  float: left;
+  color: teal;
+}
+
+#quoteButton{
+  width:200px;
+	margin-top: 10px;
+	border:2px solid teal;
+	color:#045;
+	font-family: inherit;
+	font-weight: bold;
+	padding:5px;
+	text-decoration: none;
+	text-align: center;
+}
+
+#quoteButton:hover{
+	cursor:pointer;
+	background:#045;
+	color: #fff;	
+}
+#quoteButton:active{
+	cursor: pointer;
+}
+.titleQuote{
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
